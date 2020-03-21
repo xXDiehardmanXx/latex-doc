@@ -1,0 +1,1188 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\title{Solution of Generalized Fractional Kinetic Equation Pertaining to Error Functions}
+\author{${^1}$Ravi Kumar Jain, ${^2}$Alok Bhargava\\Department of Mathematics and Statistics\\Manipal University Jaipur, Jaipur (India)}
+\date{}
+\begin{document}
+\maketitle
+\numberwithin{equation}{section}
+\pagenumbering{arabic}
+\newcommand{\frsum}[1][Work]{
+    \frac{2}{\sqrt{\pi}}
+    $\sum$}Fractional kinetic equation, error function, Complementary error function, Imaginary error function, Laplace transform, Mittag Leffler function.
+%LaTeX code : Rakshit Verma, rakshitvermajpr@gmail.com 
+\paragraph{\textbf{\underline{ABSTRACT}}}
+In this paper, we propose an extensive form of generalized fractional kinetic equations (FKE) involving error functions. Here we take the error function in Maclaurin series form and find the solution of proposed FKE in the form of Mittag Leffler function by using the Laplace transform technique. We also derive the specific results in the form of six corollaries.
+
+\paragraph{Keywords:}
+Fractional kinetic equation, error function, Complementary error function, Imaginary error function, Laplace transform, Mittag Leffler function.
+
+\paragraph{2010 Mathematics Subject Classification:} 26A33, 33B20, 33E12, 34A08, 44A10
+
+\section{Introduction}
+The fractional differential and integral equation is very important in the field of applied science. It has more attention not only in mathematics but also in dynamical systems, physics, control systems and engineering, creating mathematical models of many physical phenomena.Especially the kinetic equation describe the continuity of motion of materials and are the fundamental equation of arithmetical physics and pure science. Keeping in mind the fruitfulness and importance of the kinetic equation in some astrophysical problems the authors create a more generalized form of the fractional kinetic equation involving error function in Maclaurin series form. The extension and generalization of fractional kinetic equations involving fractional operators can be found in [1, 2, 7, 9, 10, 13-14, 21- 23].\\
+The standard Kinetic equation
+\begin{equation}
+    \frac{\text{d $N_i(t)$}}{\text{dt}}
+    = -\xi _i N_i(t)
+\end{equation}
+
+With the initial condition $N_i (t=0) = N_0$ and $\xi _i > 0$.If we integrate the standard kinetic equation (1.1), then we have [8, p.58]
+
+\begin{equation}
+N_i (t) - N_i (0) = -\xi _{i}\,{_0 D_t^{-1}}N_i (t)
+\end{equation}
+
+
+Where ${_0 D_t}^{-1}$ is a case of the Riemann \- Liouville integral operator ${_0 D_t}^{-v}$ [12] defined as
+
+\begin{equation}
+    {_0 D_t}^{-v} f (t) = \frac{1}{\Gamma{(v)}}
+    \int_0^t(t - s)^{v-1}
+    f(s)ds;
+    t > 0,
+    R(v) > 0 
+\end{equation}
+
+\paragraph{}
+Here we recall that in the paper of Haubold and Mathai [8], the number density of species i,$N_i = N_i (t)$ is a function of time and $N_i (0) = N_0$ is the number density of that species at time t = 0.
+A fractional generalization of the standard kinetic equation (1.2) by dropping index ‘i’, is given by Haubold and Mathai [8] as follows:
+
+\begin{equation}
+    N(t) - N_0
+    =-\xi ^v_0
+    D^{-v}_t
+    N (t)
+\end{equation}
+
+They obtained the solution of (1.4) as:
+\begin{equation}
+    N(t) 
+    =N_0
+    \sum_{k=0}^\infty 
+    \frac{(-1)^k}{\Gamma{(vk+1)}}(\xi t)^{vk}
+\end{equation}
+
+Saxena and Kalla [21] introduced the following fractional kinetic equation:
+\begin{equation}
+    N(t) - N_0f(t)
+    =-d ^v_0
+    D^{-v}_t
+    N (t)
+    ;R(v) > 0
+\end{equation}
+\paragraph{}
+Where $N(t)$ denotes the number density of a given species at time,$N_0 = N(0)$ is the number density of that species at time $t = 0$, d is a constant.
+The Laplace transform of the Riemann–Liouville fractional integral operator [6, 20] is given by:
+\\
+\\
+\begin{equation}
+L_0D_t^{-v}f(t);=s^{-v}F(s)
+\end{equation}
+\\
+The Generalized Mittag-Leffler function $E_{\alpha , \beta}(z)$ is given by Wiman [25] as
+\\ 
+\begin{equation}
+    E_{\alpha , \beta}(Z) 
+    = \sum_{k = 0}^{\infty}
+    \frac{Z^k}{\Gamma{(\alpha k + \beta)}};
+    \alpha ,
+    \beta ,
+    Z \in C,
+    R(\alpha) > 0,
+    R(\beta) > 0
+\end{equation}
+\\ 
+The error function erf(x) [24] is defined as 
+
+\begin{equation}
+    erf(x)=
+    \frac{2}{\sqrt{\pi}}
+    \int_0^{x}{e^{-t^2}}dt
+    =\frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n}{(2n+1)\Gamma{(n+1)}}
+    x^{2n+1}
+\end{equation}
+\paragraph{}
+The error function is defined for all real and complex values of x and is considered as an odd function.
+The complementary error function $erfc(x)$ [24] is defined as
+
+\begin{equation}
+    erfc(x)=
+    1-\frac{2}{\sqrt{\pi}}
+    \int_0^{x}{e^{-t^2}}dt
+    =1-\frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n}{(2n+1)\Gamma{(n+1)}}
+    x^{2n+1}
+\end{equation}
+
+The imaginary error function $erfi(x)$ [24] is defined as :
+
+\begin{equation}
+    erfi(x)=
+    \frac{2}{\sqrt{\pi}}
+    \int_0^{x}{e^{t^2}}dt
+    =\frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{1}}{(2n+1)\Gamma{(n+1)}}
+    x^{2n+1}
+\end{equation}
+\\
+The fractional derivative of order $\alpha$ of the function $f(t) = t^{\beta}$ is given by [12] as\\ 
+\begin{equation}
+    D^{\alpha}t^{\beta}=
+    \frac{\Gamma{(\beta + 1)}}{\Gamma{(\beta - \alpha + 1)}}
+    t^{\beta - \alpha};
+    R(\beta) > -1, 0
+    < R(\alpha) < 1, t > 0
+\end{equation}
+Further by using the above definition, the fractional derivative of constant function $f(t) = C$ (constant) is given by:
+
+\begin{equation}
+    D^{\alpha}C = 
+    \frac{\text{C}}{\Gamma{(1-\alpha)}}
+    t^{- \alpha};
+    0 < R(\alpha) < 1,
+    t > 0
+\end{equation}\\ 
+From equation (1.13) we can see that the fractional derivative of any constant is a non-zero quantity.
+By using the definition of fractional derivatives,the fractional derivative of error function is given by:
+\begin{equation}
+    D^v erf(t) = 
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n\Gamma{(2n+2)}}{(2n+1)\Gamma{n+1}}
+    \frac{t^{2n-v+1}}{\Gamma{(2n-v+2)}}
+\end{equation}\\ 
+By using the definition of fractional derivatives, fractional derivative of complementary error function is given by\\ 
+\begin{equation}
+    D^v erfc(t) = 
+    \frac{1}{\Gamma(1 - v)}
+    t^{-v}-
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n\Gamma{(2n+2)}}{(2n+1)\Gamma{n+1}}
+    \frac{t^{2n-v+1}}{\Gamma{(2n-v+2)}}
+\end{equation}
+\\ 
+Similarly, the fractional derivative of imaginary error function is given by:
+\\ 
+\begin{equation}
+    D^v erfi(t) = 
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{\Gamma{(2n+2)}}}{(2n+1)\Gamma{(n+1)}}
+    \frac{t^{2n-v+1}}{\Gamma{(2n-v+2)}}
+\end{equation}
+\paragraph{Requried Results :\\}
+    To prove our main results, we need following results
+\paragraph{Result-1}
+\begin{equation}
+    L \big\{ erf(t) \big\} = 
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    \frac{1}{s^{2n+2}}
+\end{equation}
+\paragraph{Result-2}
+\begin{equation}
+    L \big\{ erfc(t) \big\} = 
+    \frac{1}{s}-
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    \frac{1}{s^{2n+2}}
+\end{equation}
+\paragraph{Result-3}
+\begin{equation}
+    L \big\{ erfi(t) \big\} = 
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    \frac{1}{s^{2n+2}}
+\end{equation}
+\paragraph{Proof of Result-1:}
+By using the definition of Laplace transform and error function defined in (1.9), we have
+\begin{equation*}
+    L \big\{ erf(t) \big\}=
+    \int_0^{\infty}
+    {e^{-st}}erf(t)dt = 
+    \int_0^{\infty}
+    {e^{-st}}
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n}{(2n+1)\Gamma{(n+1)}}
+    t^{2n+1}dt
+\end{equation*}
+by changing the order of summation and integral (which is permissible under the given conditions), we get
+
+\begin{equation*}
+    L \big\{ erf(t) \big\}=
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n}{(2n+1)\,n\,!}
+    \int_0^{\infty}
+    e^{-st}t^{2n+1}dt=
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    \frac{1}{s^{2n+2}}
+\end{equation*}
+Further, the results (1.18) and (1.19) can be proved on the similar lines and in view of (1.10) and (1.11) respectively.\\ 
+\paragraph{Result-4}
+\begin{equation}
+    L\big\{{D^v}erf(t))\big\} = 
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    \frac{1}{s^{2n-v+2}}
+\end{equation}
+\paragraph{Result-5}
+\begin{equation}
+    L \big\{ D^v erfc(t) \big\} = 
+    \frac{1}{s^{1-v}}-
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    \frac{1}{s^{2n-v+2}}
+\end{equation}
+\paragraph{Result-6}
+\begin{equation}
+    L\big\{{D^v}erfi(t)\big\} = 
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    \frac{1}{s^{2n-v+2}}
+\end{equation}
+\paragraph{Proofs of Result 4, 5 and 6:}
+Using the definition of Laplace transform on (1.14), (1.15) and (1.16) and after simple calculations, we get the desired results (1.20), (1.21) and (1.22) respectively.
+
+\paragraph{Result-7}
+\begin{equation}
+    L\big\{{t^v}erf(t)\big\} = 
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n\Gamma{(2n+v+2)}}{(2n+1)\Gamma{(n+1)}}
+    \frac{1}{s^{2n+v+2}}
+\end{equation}
+\paragraph{Result-8\\}
+\begin{equation}
+    L\big\{{t^v}erfc(t)\big\}=
+    \frac{\Gamma{(v+1)}}{s^{v+1}}
+    -\frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n\Gamma{(2n+v+2)}}{(2n+1)\Gamma{(n+1)}}
+    \frac{1}{s^{2n+v+2}}
+\end{equation}
+\paragraph{Result-9}
+\begin{equation}
+    L\big\{{t^v}erfi(t)\big\} = 
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n\Gamma{(2n+v+2)}}{(2n+1)\Gamma{(n+1)}}
+    \frac{1}{s^{2n+v+2}}
+\end{equation}
+\paragraph{Proof of Result-7:}
+Using the definition of Laplace transform
+\begin{equation*}
+    L \big\{ {t^v}erf(t) \big\}=
+    \int_0^{\infty}
+    e ^{-st}{t^v}erf(t)dt = 
+    \int_0^{\infty}
+    e ^{-st}t^{v}
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{({-1)}^n}{(2n+1)\Gamma{(n+1)}}
+    t^{2n+1}dt
+\end{equation*}
+by changing the order of summation and integral (which is permissible under the given conditions), we get
+\begin{equation*}
+    L \big\{{t^v} erf(t) \big\}=
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n}{(2n+1)\Gamma{(n+1)}}
+    \int_0^{\infty}
+    e ^{-st}t^{2n+v+1}dt =
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)}^n\Gamma{(2n+v+2)}}{(2n+1)\Gamma{(n+1)}}
+    \frac{1}{s^{2n+v+2}}
+\end{equation*}
+Further, the results (1.24) and (1.25) can be proved on the similar lines.
+\section{Main Results}
+In this section, we apply the Laplace transform to find the solution of generalized fractional kinetic equation involving error functions in terms of generalized Mittag-Leffler function $E_{{\alpha}, {\beta}}(Z)$.
+\paragraph{Theorem 1}
+If $d > 0$, $v > 0$, $t \in C$, then the solution of the equation
+
+\begin{equation}
+    N(t) - N_0erf(t) = {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by:
+\begin{equation}
+    N(t) = N_0
+    \frac{2}{\sqrt{\pi}}\sum_{n = 0}^{\infty}
+    \frac{(-1)^n}{\Gamma{(n+1)}}
+    \Gamma{(2n+1)}t^{2n+1}
+    E_{v,2n+2}
+    ({-d^v}{t^v})
+\end{equation}
+Where $erf(t)$ is the error function in the Maclaurin series form, mentioned in (1.9).
+\paragraph{Proof:}
+Applying the Laplace transform on both sides of (2.1) and using (1.17), we get:
+\begin{equation*}
+    L\{\big N(t) \big\} - N_0L\{erf(t)\}=
+    {-d^v}L\{_0D_t^{-v}N(t)\}
+\end{equation*}
+
+\begin{equation*}
+    N(s) = N_0
+    \frac{2}{\sqrt{\pi}}
+    \frac{1}{\big[1+{d^v}{s^{-v}}\big]}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n}{\Gamma{(n+1)}}
+    \frac{\Gamma{(2n+1)}}{s^{2n+2}}
+\end{equation*}
+
+\begin{equation*}
+    =N_0
+    \frac{2}{\sqrt{\pi}}\sum_{n = 0}^{\infty}
+    \frac{(-1)^n}{\Gamma{(n+1)}}
+    \frac{\Gamma{(2n+1)}}{s^{2n+2}}
+    \times \sum_{k = 0}^{\infty}
+    \Big[-\Big(\frac{s}{d}\Big)^{-v}\Big]^k
+\end{equation*}
+\begin{equation*}
+    =N_0
+    \frac{2}{\sqrt{\pi}}\sum_{n = 0}^{\infty}
+    \frac{(-1)^n}{\Gamma{(n+1)}}
+    \frac{\Gamma{(2n+1)}}{s^{2n+2}}
+    \times \sum_{k = 0}^{\infty}
+    (-1)^k d^{vk} s^{-(2n+vk+2)}
+\end{equation*}
+Now taking the inverse Laplace transform, we get
+\begin{equation*}
+    N(t)=N_0
+    \frac{2}{\sqrt{\pi}}\sum_{n = 0}^{\infty}
+    \frac{(-1)^n\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    t^{2n+1}
+    \sum_{k = 0}^{\infty}
+    \frac{\Big(-d^v{t^v}\Big)^k}{\Gamma{(vk+2n+2)}}
+\end{equation*}
+\begin{equation*}
+    =N_0
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty} 
+    \frac{(-1)^n\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    t^{2n+1}
+    E_{v,{2n+2}}
+    \Big({-d^v}{t^v}\Big)
+\end{equation*}
+\paragraph{Theorem 2}
+If $d > 0, v > 0, t \in C,$ then the solution of the equation
+\begin{equation}
+    N(t) - N_0erfi(t) = {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by 
+\begin{equation}
+    N(t) = N_0
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    t^{2n+1}
+    E_{v,2n+2}
+    \Big({-d^v}{t^v}\Big)
+\end{equation}
+Where, $erfi(t)$ is the imaginary error function in the Maclaurin series form, mentioned in (1.11).
+\paragraph{Proof:}
+Proceeding on the similar lines of the proof of Theorem 1, we can obtain the result (2.4).
+\paragraph{Theorem 3}
+If $d > 0, v > 0, t \in C,$ then the solution of the equation
+\begin{equation}
+    N(t) - N_0erfc(t) = {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given By
+\begin{equation}
+    N(t) = N_0E_{v,1}
+    \Big({-d^v}{t^v}\Big)
+    -{N_0}\frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)^n}\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    t^{2n+1}
+    E_{v,2n+2}
+    \Big({-d^v}{t^v}\Big)
+\end{equation}
+Where $erfc(t)$ is the complementary error function mentioned in (1.10).
+\paragraph{Proof:}
+Taking Laplace transform on both the sides of (2.5) and in view of (1.18), we have
+\begin{equation*}
+    N(s) - N_0
+    \bigg[
+        \frac{1}{s}
+        -\frac{2}{\sqrt{\pi}}
+        \sum_{n = 0}^{\infty}
+        \frac{{(-1)^n}}{\Gamma{(n+1)}}
+        \frac{\Gamma{(2n+1)}}{s^{2n+2}}
+    \bigg]
+    ={-d^v}{s^{-v}}N(s)
+\end{equation*}
+\begin{equation*}
+    \Rightarrow N(s) = N_0
+    \bigg[
+        \frac{1}{s}
+        -\frac{2}{\sqrt{\pi}}
+        \sum_{n = 0}^{\infty}
+        \frac{{(-1)^n}}{\Gamma{(n+1)}}
+        \frac{\Gamma{(2n+1)}}{s^{2n+2}}
+    \bigg]
+    \times \sum_{k = 0}^{\infty}
+    \bigg[
+        -{\bigg(\frac{s}{d}\bigg)^{-v}}
+    \bigg]^k
+\end{equation*}
+\begin{equation*}
+    =N_0
+    \sum_{k = 0}^{\infty}
+    \frac{{(-1)^k}{d^{vk}}}{s^{vk+1}}
+    -N_0\frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n \Gamma{(2n+1)}}{\Gamma{n+1}}
+    \times \sum_{k = 0}^{\infty}
+    \frac{(-1)^k {d^{vk}}}{s^{2n+vk+2}}
+\end{equation*}
+Taking the inverse Laplace transform on both the sides, we get:
+\begin{equation*}
+    N(t) = N_0
+    \sum_{k = 0}^{\infty}
+    \frac{\big({-d^v}{t^v}\big)^k}{\Gamma{(vk+1)}}
+    -{N_0}\frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)^n}\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    t^{2n+1}
+    \sum_{k = 0}^{\infty}
+    \frac{\big({-d^v}{t^v}\big)^k}{\Gamma{(2n+{vk}+2)}}
+\end{equation*}
+\begin{equation*}
+    N_0E_{v,1}
+    \big({-d^v}{t^v}\big)
+    -N_0\frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n \Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    t^{2n+1} E_{v, 2n+2}
+    \big({-d^v}{t^v}\big)
+\end{equation*}
+\paragraph{Theorem 4}
+If $d > 0, v > 0, t \in C,$ then the solution of the equation
+\begin{equation}
+    N(t) - N_0{t^v}erf(t) = {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by
+\begin{equation}
+    N(t) = N_0
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)^n}\Gamma{(v+2n+2)}}{{(2n+1)}\Gamma{(n+1)}}
+    t^{v+2n+1}
+    E_{v,v+2n+2}
+    \Big({-d^v}{t^v}\Big)
+\end{equation}
+Where $erf(t)$ is the error function mentioned in (1.9).
+\paragraph{Proof:}
+Applying the Laplace transform on both sides of (2.7) and observing (1.23), we get
+\begin{equation*}
+    N(s)=N_0
+    \frac{2}{\sqrt{\pi}}
+    \frac{1}{\Big[1+{d^v}{s^{-v}}\Big]}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n}{(2n+1)\Gamma{(n+1)}}
+    \frac{\Gamma{(v+2n+2)}}{s^{v+2n+2}}
+\end{equation*}
+\begin{equation*}
+    =N_0
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)^n}}{(2n+1)\Gamma{(n+1)}}
+    \frac{\Gamma{(v+2n+2)}}{s^{v+2n+2}}
+    \times
+    \sum_{k=0}^{\infty}
+    \bigg[
+        -{\bigg(\frac{s}{d}\bigg)^{-v}}
+    \bigg]^k
+\end{equation*}
+\begin{equation*}
+    =N_0
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)^n}}{(2n+1)\Gamma{(n+1)}}
+    \frac{\Gamma{(v+2n+2)}}{s^{v+2n+2}}
+    \times
+    \sum_{k=0}^{\infty}
+    {(-1)^k}{d^{vk}}{s^{-(v+2n+vk+2)}}
+\end{equation*}
+
+Now taking the inverse Laplace transform, we get
+\begin{equation*}
+    N(t)=N_0
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)^n}\Gamma{(v+2n+2)}}{(2n+1)\Gamma{(n+1)}}
+    t^{v+2n+1}
+    {\sum_{k=0}^{\infty}}
+    \frac{\big(-{d^v} {t^v}\big)^k}{\Gamma{(vk+v+2n+2)}}
+\end{equation*}
+\begin{equation*}
+={N_0}\frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+\frac{{(-1)^n\,\Gamma{(v+2n+2)}}}{(2n+1)\Gamma{(n+1)}}
+    t^{v+2n+1}
+    E_{v,v+2n+2}
+    \Big({-d^v}{t^v}\Big)
+\end{equation*}
+\paragraph{Theorem 5}
+If $d > 0, v > 0, t \in C,$ then the solution of the equation
+\begin{equation}
+    N(t) - N_0{t^v}erfi(t) = {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by
+\begin{equation}
+    N(t) = N_0
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{\Gamma{(v+2n+2)}}{{(2n+1)}\Gamma{(n+1)}}
+    t^{v+2n+1}
+    E_{v,v+2n+2}
+    \Big({-d^v}{t^v}\Big)
+\end{equation}
+Where $erfi(t)$ is the imaginary error function mentioned in (1.11).
+\paragraph{Proof:}
+Proceeding on the similar lines of the proof of Theorem 4, we can calculate the result (2.10).
+\paragraph{Theorem 6}
+If $d > 0, v > 0, t \in C,$ then the solution of the equation
+\begin{equation}
+    N(t) - N_0{t^v}erfc(t) = {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by
+\begin{equation}
+    N(t) = N_0
+    \Gamma{(v+1)}
+    {t^v}E_{v,v+1}
+    \big({-d^v}{t^v}\big)
+    -{N_0}\frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)^n}\Gamma{(v+2n+2)}}{{(2n+1)}\Gamma{(n+1)}}
+    t^{v+2n+1}
+    E_{v,v+2n+2}
+    \Big({-d^v}{t^v}\Big)
+\end{equation}
+Where $erfc(t)$ is the complementary error function mentioned in (1.10).
+\paragraph{Proof:}
+Proceeding on the similar lines of the proof of Theorem 4, we can obtain the result (2.12).
+\paragraph{Theorem 7}
+If $d > 0, v > 0, t \in C, and {2n+1} > \mu , \mu \neq {v} $ then the solution of the equation
+\begin{equation}
+    N(t) - {N_0} {D^{\mu}} \, erf(t) = {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by
+\begin{equation}
+    N(t) = N_0
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)^n}\Gamma{(2n+1)}}{{\Gamma{(n+1)}}}
+    t^{2n-{\mu}+1}
+    E_{\nu,2n- \mu +2}
+    \Big({-d^v}{t^v}\Big)
+\end{equation}
+Where $D^{\mu}erf(t)$ is the fractional derivative of error function of order $\mu$.
+\paragraph{Proof:}
+Applying the Laplace transform on both sides of (2.13) and observing (1.20), we get
+\begin{equation*}
+    N(s)=N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \frac{1}{\big[1+{d^v}{s^{-v}}\big]}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n}{(2n+1)\Gamma{(n+1)}}
+    \frac{\Gamma{(2n+2)}}{s^{2n- \mu +2}}
+\end{equation*}
+\begin{equation*}
+    =N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n}{(2n+1)\Gamma{(n+1)}}
+    \frac{\Gamma{(2n+2)}}{s^{2n- \mu +2}}
+    \times
+    \sum_{k=0}^{\infty}
+    \bigg[
+        -{\bigg(\frac{s}{d}\bigg)^{-v}}
+    \bigg]^k
+\end{equation*}
+\begin{equation*}
+    =N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n}{(2n+1)\Gamma{(n+1)}}
+    \frac{\Gamma{(2n+2)}}{s^{2n- \mu +2}}
+    \times
+    \sum_{k=0}^{\infty}
+    (-1)^k{d^{vk}}{s^{-(2n+vk- \mu +2)}}
+\end{equation*}
+Now taking the inverse Laplace transform on both the side, we get
+\begin{equation*}
+    N(t)=N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n\,\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    t^{2n-{\mu}+1}
+    \sum_{k=0}^{\infty}
+    \frac{\big(-{d^v}{t^v})^k}{\Gamma{vk+2n-\mu+2}}
+\end{equation*}
+\begin{equation*}
+    N(t)=N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n\Gamma{(2n+1)}}{\Gamma{n+1}}
+    t^{2n-{\mu}+1}
+    E_{v, 2n-{\mu}+2}
+    \big(-{d^v}{t^v})
+\end{equation*}
+\paragraph{Theorem 8}
+If $d > 0, v > 0, t \in C, \& \,{2n+1} > \mu , \mu \neq {v} $ then the solution of the equation
+\begin{equation}
+    N(t) - {{N_0}D^{\mu}} \, erfi(t) = {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}  
+is given by
+\begin{equation}
+    N(t)=N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{\Gamma{(2n+1)}}{\Gamma{n+1}}
+    t^{2n-{\mu}+1}
+    E_{v, 2n-{\mu}+2}
+    \big(-{d^v}{t^v})
+\end{equation}
+Where $D^{\mu}erfi(t)$ is the fractional derivative of imaginary function of order $\mu$.
+\paragraph{Proof:}
+Proceeding on the similar lines of the proof of Theorem 7, we can obtain the desired result (2.16).
+
+\paragraph{Theorem 9}
+If $d > 0, v > 0, t \in C, \& \,{2n+1} > \mu , \mu \neq {v} $ then the solution of the equation
+\begin{equation}
+    N(t) - {{N_0}D^{\mu}} \, erfc(t) = {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by
+\begin{equation}
+    N(t)
+    =N_0
+    t^{{\mu}-2}
+    E_{v, {\mu} - 1}
+    {\big(-{{d^v}}{t^v}\big)}
+    -N_0{\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n\Gamma{(2n+1)}}{\Gamma{n+1}}
+    t^{2n-{\mu}+1}
+    E_{v, 2n-{\mu}+2}
+    \big(-{d^v}{t^v})
+\end{equation}
+Where $D^{\mu}erfc(t)$ is the fractional derivative of Complementary error function of order $\mu$.
+\paragraph{Proof:}
+Proceeding on the similar lines of the proof of Theorem 7, we can obtain the desired result (2.18).
+
+\paragraph{Theorem 10}
+If $d > 0, v > 0, t \in C, a \neq d $ then the solution of the equation
+\begin{equation}
+    N(t) - {N_0}erf({d^v}{t^v}) = {-a^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by
+\begin{equation}
+    N(t) = N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n\Gamma{(2nv+v+1)}}{\Gamma{(n+1)}(2n+1)}
+    \big({d^v}{t^v}\big)^{2n+1}
+    E_{v, 2nv+v+1}
+    \big(-{a^v}{t^v}\big)
+\end{equation}
+\paragraph{Proof:}
+Taking the Laplace transform on both sides of (2.19), we get
+\begin{equation*}
+    N(s)=N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n{\big(d^{2nv+v}\big)}}{(2n+1)\Gamma{(n+1)}}
+    \frac{\Gamma{(2nv+v+1)}}{s^{2nv+v+1}}
+\end{equation*}
+\begin{equation*}
+    =N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n{\big(d^{2nv+v}\big)}}{(2n+1)\Gamma{(n+1)}}
+    \frac{\Gamma{(2nv+v+1)}}{s^{2nv+v+1}}
+    \times
+    \sum_{k=0}^{\infty}
+    \bigg[
+        -{\bigg(\frac{s}{d}\bigg)^{-v}}
+    \bigg]^k
+\end{equation*}
+\begin{equation*}
+    =N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n{\big(d^{2nv+v}\big)}}{(2n+1)\Gamma{(n+1)}}
+    \frac{\Gamma{(2nv+v+1)}}{s^{2nv+v+1}}
+    \times
+    \sum_{k=0}^{\infty}
+    (-1)^k{a^{vk}}{s^{-(2nv+v+vk+1)}}
+\end{equation*}
+Now taking the inverse Laplace transform, we get
+\begin{equation*}
+    N(t) = N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n\Gamma{(2nv+v+1)}}{(2n+1)\Gamma{(n+1)}}
+    \big({d^v}{t^v} \big) ^{(2n+1)}
+    \sum_{k=0}^{\infty}
+    \frac{\big(-{a^v}{t^v}\big)^k}{\Gamma{(2nv+v+vk+1)}}
+\end{equation*}
+\begin{equation*}
+    N(t) = N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n\Gamma{(2nv+v+1)}}{{n\,!}(2n+1)}
+    \big({d^v}{t^v}\big)^{(2n+1)}
+    E_{v, 2nv+v+1}
+    \big(-{a^v}{t^v}\big)
+\end{equation*}
+\paragraph{Theorem 11}
+If $d > 0, v > 0, t \in C, a \neq d $ then the solution of the equation
+\begin{equation}
+    N(t) - {N_0}erfi({d^v}{t^v}) = {-a^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by:
+\begin{equation}
+    N(t) = N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{\Gamma{(2nv+v+1)}}{{n\,!}(2n+1)}
+    \big({d^v}{t^v}\big)^{2n+1}
+    E_{v, 2nv+v+1}
+    \big(-{a^v}{t^v} \big)
+\end{equation}
+\paragraph{Proof:}
+On proceeding the lines like the proof of Theorem10, the result (2.22) can be proved easily.
+\paragraph{Theorem 12}
+If $d > 0, v > 0, t \in C, a \neq d $ then the solution of the equation
+\begin{equation}
+    N(t) - {N_0}erfc({d^v}{t^v}) = {-a^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by:
+\begin{equation}
+    N(t)=
+    N_0
+    E_{v, 1}
+    {\big(-{{d^v}}{t^v}\big)}
+    -N_0{\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n\Gamma{(2nv+v+1)}}{n\,!(2n+1)}
+    \big({d^v}{t^v}\big)^{2n+1}
+    E_{v, 2nv+v+1}
+    \big(-{a^v}{t^v})
+\end{equation}
+\paragraph{Proof:}
+On proceeding the lines like the proof of Theorem 10, the result (2.24) can be proved easily.
+\section{Special Cases}
+\paragraph{Corollary 1}
+On Substituting $t = {d^v}{t^v}$ in the error function of the equation (2.1), the solution of the equation
+\begin{equation}
+    N(t) -{N_0}erf(t)\big({d^v}{t^v}\big)= {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by:
+\begin{equation}
+    N(t) = N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)^n}\Gamma{(2nv+v+1)}}{(2n+1)\Gamma{(n+1)}}
+    \big(-{d^v}{t^v}\big)^{2n+1}
+    E_{v, 2nv+v+1}
+    \big({d^v}{t^v}\big)
+\end{equation}
+\paragraph{Proof:}
+Taking the Laplace transform on both sides of (3.1), we have\\ 
+\begin{equation*}
+    N(s)=N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n{\big(d^{2nv+v}\big)}}{(2n+1)\Gamma{(n+1)}}
+    \frac{\Gamma{(2nv+v+1)}}{s^{2nv+v+1}}
+    \times
+    \sum_{k=0}^{\infty}
+    \bigg[
+        -{\bigg(\frac{s}{d}\bigg)^{-v}}
+    \bigg]^k
+\end{equation*}
+\begin{equation*}
+    =N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n{\big(d^{2nv+v}\big)}}{(2n+1)\Gamma{(n+1)}}
+    \frac{\Gamma{(2nv+v+1)}}{s^{2nv+v+1}}
+    \times
+    \sum_{k=0}^{\infty}
+    (-1)^k{d^{vk}}{s^{-(2nv+v+vk+1)}}
+\end{equation*}
+Now taking the inverse Laplace transform on both the side, we get
+\begin{equation*}
+    N(t) = N_0
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)^n}{\Gamma{(2n \nu +v+1)}}}{(2n+1)\Gamma{(n+1)}}
+    \big({d^v}{t^v}\big)^{2n+1}
+    \times
+    \sum_{k=0}^{\infty}
+    \frac{\big(-{d^v}{t^v}\big)^k}{\Gamma(2nv+v+vk+1)}
+\end{equation*}
+\begin{equation*}
+    N(t) = N_0
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)^n}{\Gamma{(2n \nu +v+1)}}}{(2n+1)\Gamma{(n+1)}}
+    \big({d^v}{t^v}\big)^{2n+1}
+    E_{v,2nv+v+1}
+    \big(-{d^v}{t^v}\big)
+\end{equation*}
+\paragraph{Corollary 2}
+If in the equation (2.3), we take $t = {d^v}{t^v}$ in the imaginary error function, then the solution of the equation
+\begin{equation}
+    N(t) -{N_0}erfi\big({d^v}{t^v}\big)= {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by: 
+\begin{equation}
+    N(t) = N_0
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{\Gamma{(2nv+v+1)}}{(2n+1)\Gamma{(n+1)}}
+    \big({d^v}{t^v}\big)^{2n+1}
+    E_{v,2nv+v+1}
+    \big(-{d^v}{t^v}\big)
+\end{equation}
+
+\paragraph{Proof:}
+On proceeding the lines like the proof of corollary 1, the result (3.4) can be proved easily.
+
+\paragraph{Corollary 3}
+If in the equation (2.5), we take $t = {d^v}{t^v}$ in the complementary error function, then the solution of the equation
+\begin{equation}
+    N(t) -{N_0}erfc\big({d^v}{t^v}\big)= {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by: 
+\begin{equation}
+    N(t) =
+    {N_0}E_{v,1}{\big({-d^v}{t^v}\big)} 
+    -N_0
+    \frac{2}{\sqrt{\pi}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)^n}\Gamma{(2nv+v+1)}}{(2n+1)\Gamma{(n+1)}}
+    \big({d^v}{t^v}\big)^{2n+1}
+    E_{v,2nv+v+1}
+    \big(-{d^v}{t^v}\big)
+\end{equation}
+\paragraph{Proof:}
+On proceeding the lines like the proof of corollary 1, the result (3.6) can be proved easily.
+
+\paragraph{Corollary 4}
+If in the equation (2.13), we take $\mu = v$ then the solution of the equation
+\begin{equation}
+    N(t) -{N_0}{D^v}erf(t)= {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by: 
+\begin{equation}
+    N(t) =
+    N_0{\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    t^{2n-{v}+1}
+    E_{v, 2n-{v}+2}
+    \big(-{d^v}{t^v})
+\end{equation}
+Where ${D^v}erf(t)$ the fractional derivative of error function of order $\nu$ .\\ 
+\paragraph{Proof:}
+Applying the Laplace transform on both sides of (3.7), we get:\\ 
+\begin{equation*}
+    N(s) = N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n}{\Gamma{(n+1)}}
+    \frac{\Gamma{(2n+1)}}{s^{2n- v +2}}
+    \times
+    \sum_{k=0}^{\infty}
+    \bigg[
+        -{\bigg(\frac{s}{d}\bigg)^{-v}}
+    \bigg]^k
+\end{equation*}
+
+\begin{equation*}
+    = N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n}{\Gamma{(n+1)}}
+    \frac{\Gamma{(2n+1)}}{s^{2n- v +2}}
+    \times
+    \sum_{k=0}^{\infty}
+    {(-1)^k}{d^{vk}}{s^{-(2n+vk-v+2)}}
+\end{equation*}
+Now taking the inverse Laplace transform, we get 
+\begin{equation*}
+    N(t) = N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n\,{\Gamma{(2n+1)}}}{\Gamma{(n+1)}}t^{2n-{\nu}+1}
+    \sum_{k=0}^{\infty}
+    \frac{\big({-d^v}{t^v}\big)^k}{\Gamma{(vk+2n-v+2)}}
+\end{equation*}
+\begin{equation*}
+    N_0
+    {\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{(-1)^n\,{\Gamma{(2n+1)}}}{\Gamma{(n+1)}}
+    t^{2n-{\nu}+1}
+    E_{v, 2n-{\nu}+2}
+    \big(-{d^v}{t^v})
+\end{equation*}
+
+\paragraph{Corollary 5}
+If in the equation (2.15), we take $\mu = v$ then the solution of the equation
+\begin{equation}
+    N(t) -{N_0}{D^v}erfi(t)= {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by:
+\begin{equation}
+    N(t) =
+    N_0{\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    t^{2n-{v}+1}
+    E_{v, 2n-{v}+2}
+    \big(-{d^v}{t^v})
+\end{equation}
+Where ${D^v}erfi(t)$ the fractional derivative of imaginary error function of order \nu.
+\paragraph{Proof:}
+On preceding the lines like the proof of corollary 4, the result (3.10) can be proved easily.
+\paragraph{Corollary 6}
+If in the equation (2.17), we take $\mu = v$ then the solution of the equation
+\begin{equation}
+    N(t) -{N_0}{D^v}erfc(t)= {-d^v}{_0D_t^{-v}}N(t)
+\end{equation}
+is given by:
+\begin{equation}
+    N(t) =
+    {N_0}{t^{v-2}}
+    E_{v,{v-1}}
+    {\big({-d^v}{t^v}\big)}
+    -N_0{\frac{2}{\sqrt{\pi}}}
+    \sum_{n = 0}^{\infty}
+    \frac{{(-1)^n}\Gamma{(2n+1)}}{\Gamma{(n+1)}}
+    t^{2n-{v}+1}
+    E_{v, 2n-{v}+2}
+    \big(-{d^v}{t^v})
+\end{equation}
+Where ${D^v}erfc(t)$ the fractional derivative of complementary error function of order \nu.
+\paragraph{Proof:}
+On preceding the lines like the proof of corollary 4, the result (3.12) can be proved easily.
+
+\section{Graphical Interpretation}
+Here we are presenting graphical expression of our main results in Theorem 1 to Theorem 12 by taking suitable values of parameters. In figure 1 to 6  we fix $\nu$=0.5,0.8,1.2,1.5 and make  a graph between $0 \leq t \leq 2$ and $N(t)$ by assigning $N_0 = 1, d= 1$ .In figure 7 and figure  8  we assign $N_0 = 1, d= 1$ and fix the value of $\nu$ and $\mu$ . We fix $\nu$=0.5 and $\mu =0.3$, $\nu$=0.8 and $\mu =0.5$, $\nu$=1.2 and $\mu =0.8$, $\nu$=1.5 and $\mu =1.0$ and make a graph between $0 \leq t \leq 2$ and $N(t)$.In figure 9  We fix $\nu$=0.5 and $\mu =2.2$, $\nu$=0.8 and $\mu =2.4$, $\nu$=1.2 and $\mu =2.6$, $\nu$=1.5 and $\mu =2.8$ and make a graph between $0 \leq t \leq 2$ and $N(t)$.In figure 10  to figure  12  we fixed the value of $\nu$=0.5,0.8,1.2,1.5 and  make a graph between $0 \leq t \leq 2$ and $N(t)$ by taking suitable value of a=2,d=1 and $N_0 = 1$ In figure 1 to 12 line 1,2,3 and 4 are shown for  $\nu$=0.5,0.8,1.2,1.5 respectively. By graphical representation of our mains results we observe that for various parameters and time interval, $N (t)$ can be negative as well as positive.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=82mm]{graph2_2.jpg}
+    \caption{Solution of fractional Kinetic equation (2.2)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=73mm]{graph2_4.jpg}
+    \caption{Solution of fractional Kinetic equation (2.4)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=75mm]{graph2_6.jpg}
+    \caption{Solution of fractional Kinetic equation (2.6)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=75mm]{graph2_8.jpg}
+    \caption{Solution of fractional Kinetic equation (2.8)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=75mm]{graph2_10.jpg}
+    \caption{Solution of fractional Kinetic equation (2.10)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=75mm]{graph2_12.jpg}
+    \caption{Solution of fractional Kinetic equation (2.12)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=75mm]{graph2_14.jpg}
+    \caption{Solution of fractional Kinetic equation (2.14)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=75mm]{graph2_16.jpg}
+    \caption{Solution of fractional Kinetic equation (2.16)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=75mm]{graph2_18.jpg}
+    \caption{Solution of fractional Kinetic equation (2.18)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=75mm]{graph2_20.jpg}
+    \caption{Solution of fractional Kinetic equation (2.20)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=75mm]{graph2_22.jpg}
+    \caption{Solution of fractional Kinetic equation (2.22)}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=75mm]{graph2_24.jpg}
+    \caption{Solution of fractional Kinetic equation (2.24)}
+\end{figure}
+\section{Conclusion}
+In this paper we have studied a new fractional generalization of the standard kinetic equation involving error function in Maclaurin series form and derived solutions by using Laplace transform technique.From the graphical representation, we conclude that for various parameters and time interval, N(t) can be negative as well as positive.
+%Dash problem in page numbers.
+\begin{thebibliography}{9}
+
+    \bibitem{agarwal19}
+    Agarwal, G. and Bhargava,
+    \textit{A., Solution of Fractional Kinetic Equations by Using P $\alpha$ -Transform,}
+    (October 18, 2019), 
+    Proceedings of International Conference on Advancements in Computing \& Management (ICACM) 2019,
+    http://dx.doi.org/10.2139/ssrn.3471782.
+
+    \bibitem{agarwal18}
+    Agarwal, P., Chand, M., Baleanu, D. O’Regan, D. and Jain, S.
+    \textit{“On the solutions of certain fractional kinetic equations involving k-Mittag-Leffler function,”}
+    Advances in Diference Equations, vol. 2018, article no 249, 2018.
+
+    \bibitem{sayed18}
+    Agarwal, P. and El-Sayed, A.A
+    \textit{: Non-standard finite difference and Chebyshev collocation methods for solving fractional diffusion equation.}
+    Phys. A, Stat. Mech. Appl. 500, 40 $\--$ 49 (2018).
+    
+    \bibitem{abramowitz18}
+    Abramowitz, M. and Stegun, I. A. (Eds.)
+    \textit{"Error Function and Fresnel Integrals."}
+    Ch. 7 in  Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables, 9th printing. New York: Dover, pp. 297-309, 1972.
+
+    \bibitem{chouhan13}
+    Chouhan, A., Purohit, S.D., Saraswat, S
+    \textit{.: An alternative method for solving generalized differential equations of fractional order.}
+    Kragujev. J. Math. 37(2), 299$\--$306 (2013).
+
+    \bibitem{erdelyi54}
+    Erdelyi, A., Magnus, W., Oberhettinger, F., Tricomi, F.G.
+    \textit{: Tables of Integral Transforms, vol. 1. McGraw-Hill}
+    New York (1954).
+
+    \bibitem{gupta11}
+    Gupta, V. G., Sharma, B. and Belgacem,F. B. M.
+    \textit{“On the solutions of generalized fractional kinetic equations,”}
+    Applied Mathematical Sciences, vol. 5, no. 19, pp. 899$\--$910, 2011.
+
+    \bibitem{haubold10}
+    Haubold, H.J. and Mathai, A.M
+    \textit{.: The fractional kinetic equation and thermonuclear functions. Astrophys. Space Sci}
+    327, 53$\--$63 (2010).
+
+    \bibitem{habenom19}
+    Habenom, H., Suthar, D.L., Gebeyehu, M.
+    \textit{“Application of Laplace Transform on Fractional Kinetic Equation Pertaining to the Generalized Galu\^e Type Struve Function”}
+    Advances in Mathematical Physics, Volume 2019, Article ID 5074039, 8 pages.
+
+    \bibitem{Kumar15}
+    Kumar, D., Purohit, S.D., Secer, A. and Atangana
+    \textit{“On generalized fractional kinetic equations involving generalized bessel function of the first kind,”}
+    Mathematical Problems in Engineering, vol. 2015, Article ID 289387, 7 pages, 2015.
+
+    \bibitem{Magnus66}
+    Magnus, W., Oberhettinger, F. and Soni, R.P.
+    \textit{Formulas and Theorems for the Functions of Mathematical Physics, 3rd Edition,}
+    Springer-Verlag, New York, 1966.
+
+    \bibitem{Miller93}
+    Miller, K.S. and Ross, B
+    \textit{.: An Introduction to the Fractional Calculus and Fractional Differential Equations. Wiley}
+    New York (1993)
+
+    \bibitem{Nisar16}
+    Nisar, K.S., Purohit, S.D. and Mondal, S.R
+    \textit{.: Generalized fractional kinetic equations involving generalized Struve function of the first kind.}
+    J. King Saud Univ., Sci. 28, 167$\--$171 (2016).
+
+    \bibitem{Nisar17}
+    Nisar, K.S., Qi, F.
+    \textit{“On solutions of fractional kinetic equations involving the generalized k-Bessel function”}
+    Note Mat. 37 (2017) no. 2, 11$\--$20.
+
+    \bibitem{Geller69}
+    Ng., E.W.  and Geller,M.
+    \textit{“A Table of Integrals of the Error Functions” Journal  of research of the Natianal Bureau of Standards}
+    B. Mathematical Sciences Vol. 73B, No. 1, January-March 1969.
+
+    \bibitem{Podlubny99}
+    Podlubny, I
+    \textit{.: Fractional Differential Equations. Academic Press}
+    New York (1999)
+
+    \bibitem{Purohit13}
+    Purohit, S.D
+    \textit{.: Solutions of fractional partial differential equations of quantum mechanics.}
+    Adv. Appl. Math. Mech. 5(5), 639$\--$651 (2013).
+
+    \bibitem{Purohit11}
+    Purohit, S.D., Kalla, S.L
+    \textit{.: On fractional partial differential equations related to quantum mechanics}
+    J. Phys. A, Math. Theor. 44, 4 (2011).
+
+    \bibitem{Rainville60}
+    Rainville, E.D.
+    \textit{Special Functions, MacMillan,}
+    New York, 1960
+
+    \bibitem{Spiegel65}
+    Spiegel, M.R
+    \textit{.: Theory and Problems of Laplace Transforms. Schaum's Outline Series}
+    McGraw-Hill, New York (1965).
+
+    \bibitem{Saxena08}
+    Saxena, R.K., Kalla, S.L
+    \textit{.: On the solutions of certain fractional kinetic equations.}
+    Appl. Math. Comput. 199, 504$\--$511 (2008).
+
+    \bibitem{Saxena04}
+    Saxena,R. K., Mathai,A.M. and Haubold,H. J
+    \textit{, “On generalized fractional kinetic equations,” Physica A: Statistical Mechanics and its Applications,}
+    vol. 344, no. 3$\--$4, pp. 657$\--$664, 2004
+
+    \bibitem{Singh18}
+    Singh,G., Agarwal,P., Chand,M., and Jain,S.
+    \textit{“Certain fractional kinetic equations involving generalized k-Bessel function,”}
+    Transactions of A. Razmadze Mathematical Institute, vol. 172, no. 3, pp. 559$\--$570, 2018.
+
+    \bibitem{Weisstein}
+    Weisstein, E. W.
+    \textit{"Erf." From MathWorld--A Wolfram Web Resource.}
+
+    \bibitem{}
+    Wiman, A.,
+    \textit{\"Uber den Fundamental in der theorie der funktionen $E{\alpha}(x)$}
+    Acta.Math. 29(1905) 191$\--$201.
+\end{thebibliography}
+
+\end{document}
+
